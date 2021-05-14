@@ -1,0 +1,155 @@
+.blog-header-title {
+    margin: 208px 0 0 0;
+    @include roboto-regular("pt-sans-normal", 400, 36px, #000, 47px);
+}
+
+.filtr {
+    display: flex;
+    &-item {
+        @include roboto-regular("pt-sans-normal", 400, 14px, #00a48c, 16px);
+        margin: 24px 8px 24px 0;
+        padding: 4px 8px;
+        background-color: #f6f6f6;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+        width: 280px;
+        margin: 0 32px 40px 0;
+        &-desc {
+            margin: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            &-date {
+                margin: 0;
+                @include roboto-regular("pt-sans-normal", 400, 12px, rgba(0, 0, 0, 0.4), 16px);
+            }
+            &-time {
+                position: relative;
+                margin: 0;
+                @include roboto-regular("pt-sans-normal", 400, 12px, rgba(0, 0, 0, 0.4), 16px);
+            }
+            &-time::before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                top: 0px;
+                left: -16px;
+                background-image: url(../img/blog-time.svg);
+            }
+        }
+        &-tags {
+            display: flex;
+            margin: 0 0 16px 0;
+            &-text {
+                margin: 0 8px 0 0;
+                @include roboto-regular("pt-sans-normal", 400, 12px, #00a48c, 18px);
+                padding: 2px 4px;
+                border-radius: 4px;
+                background: #f6f6f6;
+            }
+        }
+        &-title {
+            @include roboto-regular("pt-sans-bold", 700, 24px, #000, 31px);
+            margin: 0;
+        }
+        &-text {
+            text-decoration: none;
+            @include roboto-regular("pt-sans-normal", 400, 14px, rgba(0, 0, 0, 0.6), 24px);
+            margin: 16px 0;
+        }
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+            &-author {
+                @include roboto-regular("pt-sans-normal", 400, 14px, rgba(0, 0, 0, 0.6), 18px);
+                position: relative;
+                margin: 16px 0 0 40px;
+            }
+            &-author::before {
+                content: "";
+                position: absolute;
+                left: -40px;
+                top: -4px;
+                width: 32px;
+                height: 32px;
+                background-image: url(../img/blog-avatar.png);
+            }
+            &-views {
+                position: relative;
+                @include roboto-regular("pt-sans-normal", 400, 12px, rgba(0, 0, 0, 0.6), 16px);
+                margin: 16px 0 0 0;
+            }
+            &-views::before {
+                content: "";
+                position: absolute;
+                left: -18px;
+                top: 2px;
+                width: 16px;
+                height: 16px;
+                background-image: url(../img/Show.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &-item:nth-child(3n) {
+        margin: 0;
+    }
+}
+.active {
+    color: #fff;
+    background-color: #00a48c;
+}
+
+.page-block {
+    margin: 24px auto 150px;
+    width: 904px;
+    &-list {
+        display: flex;
+        list-style-type: none;
+        margin: 0 0 0 150px;
+        align-items: center;
+        padding: 0;
+        &-item {
+            margin: 0 8px 0 0;
+            &-link {
+                @include roboto-regular("pt-sans-normal", 400, 14px, #000, 18px);
+                text-decoration: none;
+                padding: 3px 8px;
+            }
+            &-link:hover {
+                background: #b9efe6;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+#active-page {
+    @include roboto-regular("pt-sans-normal", 400, 14px, #00a48c, 18px);
+    background: #b9efe6;
+    border-radius: 8px;
+    padding: 3px 8px;
+}
+#left {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/leftarrow.svg);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+}
+#rigth {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/rigtharrow.svg);
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="blog-header">
+        <h1 class="blog-header-title">Блог</h1>
+    </header>
+    <main>
+        <div class="filtr">
+            <p class="filtr-item active">Все</p>
+            <p class="filtr-item">Госзакупки</p>
+            <p class="filtr-item">Медицина</p>
+            <p class="filtr-item">Управление персоналом</p>
+            <p class="filtr-item">Педагогическая деятельность</p>
+        </div>
+        <div class="box">
+            <div class="articles"></div>
+            <div class="blog-form-one">
+                <form action="#" method="post" class="form-one">
+                    <p class="form-one-title">Форма 1</p>
+                    <p class="form-one-head">Пишем просто о сложном, не пишем лишнего, не рассылаем рекламу.</p>
+                    <p class="form-one-text">Выберите тему, по которой вы хотите получать новые статьи:</p>
+                    <fieldset>
+
+                        <div class="form-one-box"><input class="custom-checkb" type="checkbox" name="government"
+                                value="government" id="government">
+                            <span class="check__box"></span>
+                            <label class="custom-lab" for="government">Госзакупки</label>
+                        </div>
+
+                        <div class="form-one-box"><input class="custom-checkb" type="checkbox" name="medicine"
+                                value="med" id="medicine">
+                            <span class="check__box"></span>
+                            <label class="custom-lab" for="medicine">Медицина</label>
+                        </div>
+                        <div class="form-one-box"><input class="custom-checkb" type="checkbox" name="personal"
+                                value="personal" id="personal">
+                            <span class="check__box"></span>
+                            <label class="custom-lab" for="personal">Управление персоналом</label>
+                        </div>
+                        <div class="form-one-box"> <input class="custom-checkb" type="checkbox" name="pedagog"
+                                value="pedagogic" id="pedagog">
+                            <span class="check__box"></span>
+                            <label class="custom-lab" for="pedagog">Педагогическая деятельность</label>
+                        </div>
+                        <input class="form-one-input-txt" type="text" name="" id="input-name"
+                            placeholder="Введите ваше имя">
+                        <input class="form-one-input-txt" type="tel" name="" id="input-tel"
+                            placeholder="Введите ваш телефон">
+                        <button type="submit" class="form-one-btn">Подписаться</button>
+                    </fieldset>
+                    <p class="form-one-footer">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                        соглашаетесь с политикой конфиденциальности.</p>
+                </form>
+                <div class="header-form-send blog-sends">
+                    <h4 class="header-form-send-title">Подтвердите подписку</h4>
+                    <p class="header-form-send-txt">Мы отправили вам письмо со ссылкой подтверждения.</p>
+                    <p class="header-form-send-anth">Если в течение 15 минут вы не<br> получили письмо:</p>
+                    <p class="header-form-send-anth">Посмотрите, пожалуйста, в папке "Спам".
+                        Проверьте, правильно ли вы написали свой адрес.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="page-block">
+
+            <ul class="page-block-list">
+                <li class="page-block-list-item">
+                    <a href="" class="page-block-list-item-link" id="left"></a>
+                </li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">1</a></li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" id="active-page" href="">2</a>
+                </li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">3</a></li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">4</a></li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">5</a></li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">...</a></li>
+                <li class="page-block-list-item"><a class="page-block-list-item-link" href="">10</a></li>
+                <li class="page-block-list-item"><a href="" class="page-block-list-item-link" id="rigth"></a></li>
+            </ul>
+        </div>
+    </main>
+    <script src="scripts/short.js"></script>
+    <script src="scripts/filtr.js"></script>
+    <script src="scripts/sendForm.js"></script>
+</body>
+
+</html>

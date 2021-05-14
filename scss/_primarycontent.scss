@@ -1,0 +1,44 @@
+.primary-content {
+    width: 905px;
+    &-title {
+        font-family: "roboto-regular";
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 28px;
+        line-height: 33px;
+        margin: 32px 0;
+    }
+    &-text {
+        font-family: "roboto-regular";
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &-list {
+        list-style-type: decimal;
+        color: #00a48c;
+
+        &-item {
+            @include roboto-regular("roboto-regular", 400, 16px, #00a48c, 24px);
+            margin: 0 0 16px 0;
+            &:last-child {
+                margin: 0;
+            }
+            & span {
+                @include roboto-regular("roboto-regular", 400, 16px, #000, 24px);
+            }
+        }
+    }
+    &-txt {
+        @include roboto-regular("roboto-regular", 400, 16px, #000, 24px);
+        margin: 0 0 32px 0;
+        & span {
+            font-family: "roboto-bold-italic";
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+}

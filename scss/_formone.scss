@@ -1,0 +1,172 @@
+.blog-form-one {
+    margin: -48px 0 0 0;
+}
+.form-one {
+    width: 232px;
+    height: 594px;
+    padding: 24px;
+    background: radial-gradient(100% 30.34% at 103.93% 13.55%, #08a689 15.19%, #117b71 100%);
+    border-radius: 8px;
+    &-title {
+        @include roboto-regular("pt-sans-bold", 700, 22px, #fff, 28px);
+        margin: 48px 0 0 0;
+    }
+    &-head {
+        @include roboto-regular("pt-sans-normal", 400, 16px, rgba(255, 255, 255, 0.6), 21px);
+        margin: 55px 0 24px 0;
+    }
+    &-text {
+        @include roboto-regular("pt-sans-bold", 700, 16px, #fff, 21px);
+        margin: 0 0 24px 0;
+    }
+    &-box {
+        cursor: pointer;
+        @include roboto-regular("pt-sans-normal", 400, 14px, #fff, 16px);
+        margin: 0 0 12px 9px;
+        position: relative;
+    }
+    &-input-txt {
+        padding: 8px 8px 8px 42px;
+        @include roboto-regular("pt-sans-normal", 400, 16px, rgba(0, 0, 0, 0.6), 21px);
+        margin: 0 0 8px -15px;
+        border: 1px solid #d4d7de;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 232px;
+    }
+
+    &-btn {
+        @include roboto-regular("pt-sans-bold", 700, 14px, #fff, 18px);
+        text-align: center;
+        background: #00a48c;
+        margin: 8px 0 8px -16px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 232px;
+    }
+    &-footer {
+        @include roboto-regular("pt-sans-normal", 400, 10px, rgba(255, 255, 255, 0.4), 13px);
+        margin: 0px;
+    }
+}
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 24px 24px 8px 13px;
+    padding: 0;
+}
+.custom-checkb {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.check__box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: -24px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.check__box:hover {
+    border: 2px solid #00a48c;
+}
+.custom-checkb:hover + .check__box {
+    border: 2px solid #00a48c;
+}
+.custom-checkb:focus + .check__box {
+    border: 2px solid #00a48c;
+}
+.custom-checkb:checked + .check__box {
+    border: 2px solid #00a48c;
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#input-name {
+    background-image: url(../img/form-person.svg);
+    background-repeat: no-repeat;
+    background-position-x: 11px;
+    background-position-y: center;
+}
+#input-tel {
+    background-image: url(../img/form-email.svg);
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: center;
+}
+// page-article
+.header-form {
+    margin: 208px 0 0 0;
+    &-box {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #f6f6f6;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 200px;
+        width: 280px;
+        margin: 0 0 24px 0;
+        padding: 24px;
+        &-link {
+            cursor: pointer;
+            padding: 4px 8px;
+            @include roboto-regular("pt-sans-normal", 400, 14px, #00a48c, 16px);
+            background: #f6f6f6;
+            border-radius: 4px;
+            margin: 0 0 8px 0;
+            &:first-child {
+                width: 20px;
+            }
+            &:nth-child(2) {
+                width: 70px;
+            }
+            &:nth-child(3) {
+                width: 65px;
+            }
+            &:nth-child(4) {
+                width: 155px;
+            }
+            &:nth-child(5) {
+                width: 185px;
+            }
+        }
+        &-link:hover {
+            color: #fff;
+            background: #00a48c;
+        }
+    }
+}
+.active-article {
+    color: #fff;
+    background: #00a48c;
+}
+
+.header-form-send {
+    display: none;
+    background: radial-gradient(100% 30.34% at 103.93% 13.55%, #08a689 15.19%, #117b71 100%);
+    border-radius: 8px;
+    &-title {
+        @include roboto-regular("pt-sans-bold", 700, 22px, #fff, 28px);
+        padding: 24px 33px 0 24px;
+        margin: 0;
+    }
+    &-txt {
+        @include roboto-regular("pt-sans-normal", 400, 16px, #fff, 21px);
+        margin: 8px 24px;
+    }
+    &-anth {
+        @include roboto-regular("pt-sans-normal", 400, 12px, rgba(255, 255, 255, 0.6), 16px);
+        margin: 0 28px 0 24px;
+        &:last-child {
+            margin: 8px 28px 24px 24px;
+            padding: 0 0 24px 0;
+        }
+    }
+}
+.blog-sends {
+    width: 280px;
+}

@@ -1,0 +1,116 @@
+body {
+    width: 1217px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+}
+.container {
+    padding: 0;
+    margin: 0 387px 0 0;
+    width: 905px;
+}
+.header {
+    .header-title {
+        font-family: "pt-sans-normal";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 208px 0 0 0;
+        line-height: 47px;
+    }
+    .header-time-article {
+        display: flex;
+        font-family: "pt-sans-normal";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.4);
+        .header-time-article-time {
+            position: relative;
+            margin: 16px 48px 0 48px;
+            &:first-child,
+            &:last-child {
+                margin: 16px 0 0 0;
+            }
+            &:nth-child(2)::before {
+                content: "";
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                background: url(../img/timeSquare.svg);
+                left: -18px;
+            }
+            &:nth-child(3)::before {
+                content: "";
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                background: url(../img/Show.svg);
+                left: -24px;
+            }
+        }
+    }
+    &-title-img {
+        width: 905px;
+        height: 344px;
+        margin: 32px 0;
+        background-image: url(../img/Rectangle81.png);
+        border-radius: 8px;
+    }
+    &-text-title {
+        font-family: "roboto-b";
+        font-weight: 700;
+        color: #000;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &-contents-nav {
+        background-color: #fff2e3;
+        font-family: "roboto-b";
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 24px;
+        line-height: 28px;
+        width: 905px;
+        & p {
+            margin: 0;
+            padding: 40px 0 13px 40px;
+        }
+        &-list {
+            margin: 0;
+            padding: 0 40px 40px 47px;
+            &-item {
+                margin: 0 0 16px 0;
+                list-style-type: none;
+                position: relative;
+            }
+            &-item:last-child {
+                margin: 0;
+            }
+            &-item::before {
+                position: absolute;
+                content: "-";
+                left: -13px;
+                top: 4px;
+            }
+            &-item:hover {
+                color: #00a48c;
+            }
+            &-item a {
+                font-family: "roboto-regular";
+                font-weight: normal;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.6);
+                text-decoration-line: underline;
+            }
+            &-item a:hover {
+                color: #00a48c;
+            }
+        }
+    }
+}
